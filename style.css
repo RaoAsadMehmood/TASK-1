@@ -1,0 +1,40 @@
+.body {
+  margin: 0%;
+  padding: 0%;
+}
+header img {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-size: large;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.order {
+  background-color: red;
+  border-radius: 30px;
+  padding: 15px;
+}
+.frnachise {
+  background-color: black;
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+  border: 1px solid white;
+}
