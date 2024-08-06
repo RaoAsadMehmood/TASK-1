@@ -1,40 +1,372 @@
 .body {
   margin: 0%;
-  padding: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+  border: border-box;
+  color: white;
+  background-color: black;
 }
-header img {
-  display: flex;
-  justify-content: center;
-  height: 60px;
-}
-
-header {
+.navbar {
+  width: 100%;
+  height: 92px;
   background-color: black;
   color: white;
-  padding: 10px;
-  width: 100%;
-  font-size: large;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
-
-nav ul {
+.nav-logo {
+  height: 92px;
+  width: 165px;
+}
+.right-sec {
+  font-size: 0.85rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 25px;
   list-style: none;
-  gap: 30px;
   flex-wrap: wrap;
-  text-align: center;
+}
+.right-sec a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white
 }
 
+.franchise {
+  background-color: black;
+  padding: 15px;
+  color: white;
+  margin: 0px 12px 0px 0px;
+  border-radius: 35px;
+  border: 1px solid #fff;
+}
 .order {
   background-color: red;
-  border-radius: 30px;
-  padding: 15px;
-}
-.frnachise {
-  background-color: black;
-  border-radius: 30px;
+  border-radius: 35px;
+  margin: 0px 12px 0px 0px;
   padding: 15px;
   color: white;
-  border: 1px solid white;
+  border: 1px solid red;
 }
+
+.mid-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+  flex: wrap;
+}
+.logo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+  flex: wrap;
+}
+.logo-text p {
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+}
+.parent-logos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.child-logo {
+  width: 33%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.custom-button {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  display: inline-block;
+  align-items: center;
+  gap: 10px;
+  background-color: #1d1d1d;
+  margin: 15px;
+}
+.custom-button:hover {
+  background-color: #333;
+}
+.address-sec {
+  width: 100%;
+  height: 1167px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 70px;
+}
+
+.address-sec-text {
+  text-align: center;
+  padding: 30px;
+}
+
+.ISL-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.content {
+  max-width: 60%;
+}
+
+.content h1 {
+  color: #e74c3c;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.content h2 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.content h2 span {
+  font-weight: normal;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.material-symbols-outlined {
+  font-size: 1.5em;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.button a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1d1d1d;
+}
+
+.button a:hover {
+  background-color: #333;
+}
+
+.button a .arrow {
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.button a:hover .arrow {
+  transform: rotate(90deg);
+}
+
+.image-container {
+  max-width: 45%;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Faislabad */
+  
+.FSL-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.FSL-container .content {
+  max-width: 60%;
+}
+
+.FSL-container .content h1 {
+  color: #e74c3c;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.FSL-container .content h2 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.FSL-container .content h2 span {
+  font-weight: normal;
+}
+
+.FSL-container .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.FSL-container .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.FSL-container .material-symbols-outlined {
+  font-size: 1.5em;
+}
+
+.FSL-container .button {
+  margin-top: 20px;
+}
+
+.FSL-container .button a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1d1d1d;
+}
+
+.FSL-container .button a:hover {
+  background-color: #333;
+}
+
+.FSL-container .button a .arrow {
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.FSL-container .button a:hover .arrow {
+  transform: rotate(90deg);
+}
+
+.FSL-container .image-container {
+  max-width: 45%;
+}
+
+.FSL-container .image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+}  
+
+/* Bahawalpur */
+
+.BWP-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.BWP-container .content {
+  max-width: 60%;
+}
+
+.BWP-container .content h1 {
+  color: #e74c3c;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.BWP-container .content h2 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.BWP-container .content h2 span {
+  font-weight: normal;
+}
+
+.BWP-container .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.BWP-container .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.BWP-container .material-symbols-outlined {
+  font-size: 1.5em;
+}
+
+.BWP-container .button {
+  margin-top: 20px;
+}
+
+.BWP-container .button a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #1d1d1d;
+}
+
+.BWP-container .button a:hover {
+  background-color: #333;
+}
+
+.BWP-container .button a .arrow {
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.BWP-container .button a:hover .arrow {
+  transform: rotate(90deg);
+}
+
+.BWP-container .image-container {
+  max-width: 45%;
+}
+
+.BWP-container .image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+} 
+
